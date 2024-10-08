@@ -11,7 +11,7 @@ function convertToHex() {
     while (n >= 16) {
         let rem = n % 16;
         s = '-' + hm[rem] + s;
-        logOutput += ${n} ---- ${rem}\n;
+        logOutput += `${n} ---- ${rem}\n`;
         n = Math.floor(n / 16);
     }
     if (n > 0) {
