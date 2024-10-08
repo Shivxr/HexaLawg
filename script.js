@@ -7,6 +7,7 @@ function convertToHex() {
 
     let hm = {0: '0', 1: '1', 2: '2', 3: '3', 4: '4', 5: '5', 6: '6', 7: '7', 8: '8', 9: '9', 10: 'A', 11: 'B', 12: 'C', 13: 'D', 14: 'E', 15: 'F'};
     let s = '';
+    let tmp=n;
     let logOutput = '';
     while (n >= 16) {
         let rem = n % 16;
@@ -21,7 +22,7 @@ function convertToHex() {
 
     let l = s.split("-");
     let result='';
-    if(n>=16){
+    if(tmp>=16){
      result = l.join('');
     }
     else{
