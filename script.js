@@ -15,7 +15,7 @@ function convertToHex() {
         n = Math.floor(n / 16);
     }
     if (n > 0) {
-        logOutput += ${n}\n;
+        logOutput += `${n}\n`;
         s = n + s;
     }
 
