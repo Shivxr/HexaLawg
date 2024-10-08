@@ -20,7 +20,13 @@ function convertToHex() {
     }
 
     let l = s.split("-");
-    let result = l.join('');
+    let result='';
+    if(n>=16){
+     result = l.join('');
+    }
+    else{
+         result=hm[n];
+    }
 
     // Update log output and final result
     document.getElementById("logOutput").value = logOutput;
