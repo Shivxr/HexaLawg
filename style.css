@@ -1,1 +1,82 @@
+/* Global settings */
+body {
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #00ff99; /* Neon green color for headings */
+    text-shadow: 0px 0px 5px #00ff99;
+}
+
+label {
+    font-size: 18px;
+    color: #f0f0f0;
+}
+
+input[type="number"] {
+    padding: 10px;
+    width: 50%;
+    font-size: 18px;
+    border: none;
+    background-color: #333;
+    color: #f0f0f0;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 255, 153, 0.5);
+}
+
+input[type="number"]::placeholder {
+    color: #888;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #00ff99;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 153, 0.8);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 153, 1);
+}
+
+textarea {
+    background-color: #333;
+    color: #f0f0f0;
+    border: none;
+    width: 50%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 255, 153, 0.5);
+    resize: none;
+    outline: none;
+}
+
+#hexOutput {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #222;
+    color: #00ff99;
+    font-size: 24px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 153, 0.5);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    input[type="number"], textarea {
+        width: 90%;
+    }
+}
 
