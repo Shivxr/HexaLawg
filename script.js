@@ -17,7 +17,7 @@ function convertToHex() {
     }
     if (n > 0) {
         logOutput += `${n}\n`;
-        s = n + s;
+        s = hm[n] + s;
     }
 
     let l = s.split("-");
